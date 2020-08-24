@@ -1,26 +1,29 @@
 <html>
 <head> 
-    <title> operaciones </title>
+    <title> area de un triangulo </title>
  </head>
- <body>
 
-<script src="Ejercicio2.js"></script>
+<center> 
+    <h1> Calcula el area de un triangulo </h1>
+<body bgcolor="white">
+<script language="javascript">
 
-function operaciones()
-{
-    document.bgcolor="color"
-}
-    
-  <form >
-      Numero 1; <input id="num1" type="number">
-      Numero2: <input id="num2" type="number">
-      <p id="resultado" style="color: green"></p>
-      <br /> <br />
-      <input type="button" value="SUMAR" onclick="operaciones('SUMAR')">
-      <input type="button" value="RESTAR" onclick="operaciones('RESTAR')">
-      <input type="button" value="MULTIPLICAR" onclick="operaciones('MULTIPLICAR')">
-      <input type="button" value="DIVIDIR" onclick="operaciones('DIVIDIR')">
-    
+function Area()
+        {
+     var area, base, altura;
+            base = prompt("Coloca la base");
+            altura = prompt("Coloca la altura");
+
+            base = parseInt(base);
+            altura = parseInt(altura);
+            area = (base * altura)/2;
+
+            alert("El area del triangulo es:" +area);
+        }
+    </script>
+  <form name="form1">
+      <input type="button" value="calcular" onclick=Area()>
    </form>
-</body>
-</html>
+   </center>
+  </body>
+</html> 
